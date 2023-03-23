@@ -1,0 +1,44 @@
+.fines_section>.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card {
+    box-shadow: 2px 2px 6px 2px #AEAEAE;
+    padding: 20px;
+}
+
+.product-card-prices {
+    align-self: flex-end;
+}
+
+.card .carousel-inner {
+    height: 300px;
+    width: 100%;
+}
+
+.card .carousel-item>img {
+    object-fit: cover;
+}
+
+.card-text {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.product-card-categories {
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.product-card-categories__item {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    padding: 5px 10px;
+    background-color: #CCC;
+}
+
+.striked {
+    text-decoration: line-through;
+}
