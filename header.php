@@ -49,11 +49,15 @@
 					?>
                   <form class="form-inline my-2 my-lg-0">
                      <div class="search_icon">
-                        <ul>
-                           <li><a href="#"><img src="<?php echo get_template_directory_uri(  ); ?>/images/search-icon.png"></a></li>
-                           <li><a href="#"><img src="<?php echo get_template_directory_uri(  ); ?>/images/user-icon.png"></a></li>
-                           <li><a href="#"><img src="<?php echo get_template_directory_uri(  ); ?>/images/basket-icon.png"></a></li>
-                        </ul>
+                        
+					         <?php
+					         wp_nav_menu( [
+					         	'theme_location'  => 'secondary',
+					         	'menu'            => 'Secondary Menu',
+					         	'container'       => 'ul',
+					         ] );
+					         ?>
+
                      </div>
                   </form>
                </div>

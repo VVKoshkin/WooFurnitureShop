@@ -10,7 +10,7 @@ function styles_and_scripts() {
 	wp_enqueue_style( 'responsive', get_template_directory_uri().'/css/responsive.css' );
 	// link ico images/fevicon.png ?
 	wp_enqueue_style( 'jQmCustomScrollbar', get_template_directory_uri().'/css/jquery.mCustomScrollbar.min.css');
-	wp_enqueue_style( 'fontAwesome', 'https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+	wp_enqueue_style( 'fontAwesome', 'https://netdna.bootstrapcdn.com/font-awesome/latest/css/font-awesome.css');
 	wp_enqueue_style( 'owlCarousel', get_template_directory_uri().'/css/owl.carousel.min.css');
 	wp_enqueue_style( 'owlThemeDefault', get_template_directory_uri().'/css/owl.theme.default.min.css');
 	wp_enqueue_style( 'jQfancybox', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css', $media = 'screen');
@@ -30,6 +30,7 @@ function styles_and_scripts() {
 }
 function install_menu() {
 	register_nav_menu( 'primary', 'Primary Menu' );
+	register_nav_menu( 'secondary', 'Secondary Menu' );
 }
 
 
